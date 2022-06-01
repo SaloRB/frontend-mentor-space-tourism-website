@@ -3,14 +3,12 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { destinations } from '../../data'
 
-function Destination({ destinations }) {
+function Destination() {
   const [destinationName, setDestinationName] = useState('Moon')
 
   const destination = destinations.find(
     (destination) => destination.name === destinationName
   )
-
-  console.log(destination)
 
   return (
     <div className="bg-[url('/assets/destination/background-destination-mobile.jpg')] bg-no-repeat bg-cover text-primary min-h-screen pb-8">
@@ -71,11 +69,3 @@ function Destination({ destinations }) {
 }
 
 export default Destination
-
-export async function getStaticProps() {
-  return {
-    props: {
-      destinations,
-    },
-  }
-}
