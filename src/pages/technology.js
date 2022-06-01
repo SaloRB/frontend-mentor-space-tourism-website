@@ -4,7 +4,6 @@ import { technology } from '../../data'
 import { useState } from 'react'
 
 function Technology() {
-  console.log(technology)
   const [techName, setTechName] = useState('Launch vehicle')
 
   const tech = technology.find((tech) => tech.name === techName)

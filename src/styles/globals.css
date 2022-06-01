@@ -6,4 +6,8 @@
   .selected {
     @apply text-white border-b-4 pb-2;
   }
+
+  .tablet-link {
+    @apply cursor-pointer font-subtitle text-sm text-white uppercase tracking-[2.36px];
+  }
 }

@@ -30,6 +30,7 @@ function Crew() {
         <div className="flex items-center justify-center space-x-4">
           {crew.map((member) => (
             <div
+              key={member.name}
               onClick={() => setCrewMemberName(member.name)}
               className={`h-[10px] w-[10px] ${
                 member.name === crewMemberName ? 'bg-white' : 'bg-[#979797]'
