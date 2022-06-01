@@ -3,7 +3,7 @@ import Nav from '../components/Nav'
 
 export default function Home() {
   return (
-    <div className="bg-[url('/assets/home/background-home-mobile.jpg')] bg-no-repeat bg-cover text-primary h-screen">
+    <div className="bg-[url('/assets/home/background-home-mobile.jpg')] bg-no-repeat bg-cover text-primary min-h-screen">
       <Head>
         <title>Space Tourism Website</title>
         <link rel="icon" href="/favicon.png" />
