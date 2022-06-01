@@ -8,8 +8,6 @@ function Nav() {
 
   const router = useRouter()
 
-  console.log(router.pathname)
-
   return (
     <div className="px-6 lg:pl-14 pt-6 lg:pt-14 lg:px-0 flex items-center justify-between">
       <Image

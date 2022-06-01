@@ -11,7 +11,7 @@ export default function Home() {
 
       <Nav />
 
-      <main className="text-center mt-12 md:mt-28 px-6 md:px-40 lg:mt-64 lg:flex lg:px-40 space-x-40 lg:items-end lg:justify-between lg:text-left">
+      <main className="text-center mt-12 md:mt-28 px-6 md:px-40 lg:mt-64 lg:flex lg:px-40 lg:items-end lg:justify-between lg:text-left">
         <div className="flex-1 lg:max-w-[450px]">
           <h2 className="font-subtitle uppercase tracking-[2.7px] text-xl">
             So, you want to travel to
@@ -26,7 +26,7 @@ export default function Home() {
             world experience!
           </p>
         </div>
-        <div className="h-[150px] w-[150px] md:h-[242px] md:w-[242px] lg:w-[274px] lg:h-[274px] bg-white grid place-content-center rounded-full mx-auto mt-20">
+        <div className="h-[150px] w-[150px] md:h-[242px] md:w-[242px] lg:w-[274px] lg:h-[274px] bg-white grid place-content-center rounded-full mx-auto mt-20 lg:mx-0">
           <p className="font-title uppercase text-xl text-dark tracking-[1.25px] md:text-3xl">
             Explore
           </p>
