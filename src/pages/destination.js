@@ -1,10 +1,7 @@
 import Nav from '../components/Nav'
-import { useState } from 'react'
 import Image from 'next/image'
 
 function Destination() {
-  const [destination, setDestination] = useState('moon')
-
   return (
     <div className="bg-[url('/assets/destination/background-destination-mobile.jpg')] bg-no-repeat bg-cover text-primary min-h-screen pb-8">
       <Nav />
