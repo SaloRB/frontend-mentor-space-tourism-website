@@ -16,7 +16,7 @@ export default function Home() {
           So, you want to travel to
         </h2>
         <h1 className="font-title text-[80px] uppercase text-white">Space</h1>
-        <p className="font-body leading-8 flex-grow">
+        <p className="font-body leading-8">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
