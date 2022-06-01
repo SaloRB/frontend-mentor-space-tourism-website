@@ -23,7 +23,7 @@ export default function Home() {
           experience!
         </p>
         <div className="h-[150px] w-[150px] bg-white grid place-content-center rounded-full mx-auto mt-20 mb-12">
-          <p className="font-title uppercase text-xl text-black tracking-[1.25px]">
+          <p className="font-title uppercase text-xl text-dark tracking-[1.25px]">
             Explore
           </p>
         </div>

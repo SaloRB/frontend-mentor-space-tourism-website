@@ -7,7 +7,7 @@ function Crew() {
       <Nav />
 
       <main className="text-center mt-12 px-6">
-        <h2 className="font-subtitle uppercase tracking-[2.7px] mb-8">
+        <h2 className="font-subtitle uppercase tracking-[2.7px] mb-8 text-white">
           <span className="font-bold mr-[18px] opacity-25">02</span>
           Meet your crew
         </h2>
