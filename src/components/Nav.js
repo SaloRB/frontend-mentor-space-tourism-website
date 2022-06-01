@@ -11,7 +11,7 @@ function Nav() {
   console.log(router.pathname)
 
   return (
-    <div className="px-6 pt-6 flex items-center justify-between">
+    <div className="px-6 lg:pl-14 pt-6 lg:pt-14 lg:px-0 flex items-center justify-between">
       <Image
         className="cursor-pointer"
         src="/assets/shared/logo.svg"
@@ -30,7 +30,8 @@ function Nav() {
         />
       </div>
 
-      <div className="hidden md:inline-flex bg-white/5 backdrop-blur-3xl absolute top-0 right-0 h-24 w-[450px] items-center justify-center space-x-9">
+      {/* Tablet Links */}
+      <div className="hidden lg:hidden md:inline-flex bg-white/5 backdrop-blur-3xl absolute top-0 right-0 h-24 w-[450px] items-center justify-center space-x-9">
         <Link href="/">
           <p
             className={`${router.pathname === '/' && 'border-b-2'} tablet-link`}
@@ -70,6 +71,48 @@ function Nav() {
         </Link>
       </div>
 
+      {/* Desktop Links */}
+      <div className="hidden md:hidden lg:inline-flex bg-white/5 backdrop-blur-3xl h-24 w-[830px] items-center justify-center space-x-9">
+        <Link href="/">
+          <p
+            className={`${router.pathname === '/' && 'border-b-2'} tablet-link`}
+          >
+            <span className="font-bold mr-3">01</span>Home
+          </p>
+        </Link>
+
+        <Link href="/destination">
+          <p
+            className={`${
+              router.pathname === '/destination' && 'border-b-2'
+            } tablet-link`}
+          >
+            <span className="font-bold mr-3">02</span>Destination
+          </p>
+        </Link>
+
+        <Link href="/crew">
+          <p
+            className={`${
+              router.pathname === '/crew' && 'border-b-2'
+            } tablet-link`}
+          >
+            <span className="font-bold mr-3">03</span>Crew
+          </p>
+        </Link>
+
+        <Link href="/technology">
+          <p
+            className={`${
+              router.pathname === '/technology' && 'border-b-2'
+            } tablet-link`}
+          >
+            <span className="font-bold mr-3">04</span>Technology
+          </p>
+        </Link>
+      </div>
+
+      {/* Mobile Links */}
       {open && (
         <div className="absolute w-2/3 bg-white/5 backdrop-blur-3xl top-0 right-0 bottom-0 z-40 px-8 pt-28 space-y-10">
           <Link href="/">
