@@ -1,7 +1,14 @@
 import Nav from '../components/Nav'
 import Image from 'next/image'
+import { technology } from '../../data'
+import { useState } from 'react'
 
 function Technology() {
+  console.log(technology)
+  const [techName, setTechName] = useState('Launch vehicle')
+
+  const tech = technology.find((tech) => tech.name === techName)
+
   return (
     <div className="bg-[url('/assets/technology/background-technology-mobile.jpg')] bg-no-repeat bg-cover text-primary min-h-screen pb-24">
       <Nav />
@@ -12,23 +19,28 @@ function Technology() {
           Space launch 101
         </h2>
 
-        <Image
-          src="/assets/technology/image-launch-vehicle-landscape.jpg"
-          width={375}
-          height={170}
-          objectFit="cover"
-        />
+        <div className="relative h-[170px] w-full">
+          <Image
+            src={tech.images.landscape.substring(1)}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
 
         <div className="flex items-center justify-center space-x-4 mt-8">
-          <div className="flex items-center justify-center h-[40px] w-[40px] bg-white rounded-full border border-white text-dark font-title">
-            1
-          </div>
-          <div className="flex items-center justify-center h-[40px] w-[40px] bg-transparent rounded-full border border-white font-title">
-            2
-          </div>
-          <div className="flex items-center justify-center h-[40px] w-[40px] bg-transparent rounded-full border border-white font-title">
-            3
-          </div>
+          {technology.map((tech, index) => (
+            <div
+              onClick={() => setTechName(tech.name)}
+              key={tech.name}
+              className={`${
+                tech.name === techName
+                  ? 'bg-white text-dark'
+                  : 'bg-transparent text-white'
+              } cursor-pointer flex items-center justify-center h-[40px] w-[40px]  rounded-full border border-white  font-title`}
+            >
+              {index + 1}
+            </div>
+          ))}
         </div>
 
         <div className="mt-7">
@@ -36,15 +48,9 @@ function Technology() {
             The Terminology
           </p>
           <p className="font-title text-white uppercase text-2xl mb-4">
-            Launch Vehicle
+            {tech.name}
           </p>
-          <p className="font-body leading-8 text-sm px-8">
-            A launch vehicle or carrier rocket is a rocket-propelled vehicle
-            used to carry a payload from Earth's surface to space, usually to
-            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
-            in operation. Standing 150 metres tall, it's quite an awe-inspiring
-            sight on the launch pad!
-          </p>
+          <p className="font-body leading-8 text-sm px-8">{tech.description}</p>
         </div>
       </main>
     </div>
