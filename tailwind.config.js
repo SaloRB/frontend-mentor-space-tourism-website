@@ -4,7 +4,16 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: ['Bellefair', 'serif'],
+        subtitle: ['Barlow Condensed', 'serif'],
+        body: ['Barlow', 'serif'],
+      },
+      colors: {
+        primary: '#D0D6F9',
+      },
+    },
   },
   plugins: [],
 }
