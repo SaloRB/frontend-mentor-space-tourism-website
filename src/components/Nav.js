@@ -9,14 +9,15 @@ function Nav() {
   const router = useRouter()
 
   return (
-    <div className="px-6 lg:pl-14 pt-6 lg:pt-14 lg:px-0 flex items-center justify-between">
-      <Image
-        className="cursor-pointer"
-        src="/assets/shared/logo.svg"
-        width={40}
-        height={40}
-        onClick={() => router.push('/')}
-      />
+    <div className="px-6 md:px-10 lg:pl-14 pt-6 lg:pt-14 lg:px-0 flex items-center justify-between">
+      <div className="relative h-10 h- w-10 md:h-12 md:w-12 cursor-pointer">
+        <Image
+          className="cursor-pointer"
+          src="/assets/shared/logo.svg"
+          layout="fill"
+          onClick={() => router.push('/')}
+        />
+      </div>
 
       <div className="md:hidden">
         <Image
