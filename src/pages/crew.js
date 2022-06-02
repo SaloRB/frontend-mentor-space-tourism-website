@@ -9,7 +9,7 @@ function Crew() {
   const crewMember = crew.find((crew) => crew.name === crewMemberName)
 
   return (
-    <div className="bg-[url('/assets/crew/background-crew-mobile.jpg')] bg-no-repeat bg-cover text-primary min-h-screen pb-24 md:bg-[url('/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('/assets/crew/background-crew-desktop.jpg')]">
+    <div className="bg-[url('/assets/crew/background-crew-mobile.jpg')] bg-no-repeat bg-cover text-primary min-h-screen pb-24 md:bg-[url('/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('/assets/crew/background-crew-desktop.jpg')] md:h-screen">
       <Nav />
 
       <main className="text-center mt-12 md:mt-10 px-6 md:px-10">
