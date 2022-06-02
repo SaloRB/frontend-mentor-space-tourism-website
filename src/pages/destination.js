@@ -15,7 +15,7 @@ function Destination() {
       <Nav />
 
       <main className="text-center mt-6 md:mt-10 px-6 md:px-10">
-        <h2 className="font-subtitle uppercase tracking-[2.7px] mb-8 md:mb-[60px] text-white md:text-left">
+        <h2 className="font-subtitle uppercase tracking-[2.7px] mb-8 md:mb-[60px] text-white md:text-left md:text-xl">
           <span className="font-bold md:text-xl mr-[18px] opacity-25">01</span>
           Pick your destination
         </h2>
