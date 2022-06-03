@@ -31,7 +31,7 @@ function Destination() {
               onClick={() => setDestinationName(destination.name)}
               className={`${
                 destinationName === destination.name && 'selected'
-              } text-sm md:text-base cursor-pointer`}
+              } text-sm md:text-base cursor-pointer hover:hovered`}
             >
               {destination.name}
             </p>

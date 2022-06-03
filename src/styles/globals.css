@@ -7,6 +7,10 @@
     @apply text-white border-b-4 pb-2;
   }
 
+  .hovered {
+    @apply pb-2 border-b-gray-500 border-b-4;
+  }
+
   .tablet-link {
     @apply cursor-pointer font-subtitle text-sm text-white uppercase tracking-[2.36px];
   }

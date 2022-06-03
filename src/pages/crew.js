@@ -35,8 +35,8 @@ function Crew() {
                 key={member.name}
                 onClick={() => setCrewMemberName(member.name)}
                 className={`h-[10px] w-[10px] ${
-                  member.name === crewMemberName ? 'bg-white' : 'bg-[#979797]'
-                } rounded-full cursor-pointer`}
+                  member.name === crewMemberName ? 'bg-white' : 'bg-gray-700'
+                } rounded-full cursor-pointer hover:bg-gray-500`}
               />
             ))}
           </div>

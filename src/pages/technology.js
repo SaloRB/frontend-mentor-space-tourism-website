@@ -33,9 +33,9 @@ function Technology() {
               key={tech.name}
               className={`${
                 tech.name === techName
-                  ? 'bg-white text-dark'
-                  : 'bg-transparent text-white'
-              } cursor-pointer flex items-center justify-center h-[40px] w-[40px] md:h-[60px] md:w-[60px] h- rounded-full border border-white font-title md:text-2xl`}
+                  ? 'bg-white text-dark border-white'
+                  : 'bg-transparent text-white border-gray-500'
+              } cursor-pointer flex items-center justify-center h-[40px] w-[40px] md:h-[60px] md:w-[60px] h- rounded-full font-title md:text-2xl border hover:border-white`}
             >
               {index + 1}
             </div>

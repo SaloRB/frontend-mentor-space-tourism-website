@@ -26,7 +26,7 @@ export default function Home() {
             world experience!
           </p>
         </div>
-        <div className="h-[150px] w-[150px] md:h-[242px] md:w-[242px] lg:w-[274px] lg:h-[274px] bg-white grid place-content-center rounded-full mx-auto mt-20 lg:mx-0">
+        <div className="h-[150px] w-[150px] md:h-[242px] md:w-[242px] lg:w-[274px] lg:h-[274px] bg-white grid place-content-center rounded-full mx-auto mt-20 lg:mx-0 cursor-pointer">
           <p className="font-title uppercase text-xl text-dark tracking-[1.25px] md:text-3xl">
             Explore
           </p>
