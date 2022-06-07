@@ -21,7 +21,7 @@ function Nav() {
 
       <div className="md:hidden">
         <Image
-          className="z-50"
+          className="z-50 cursor-pointer"
           src={`/assets/shared/icon-${open ? 'close' : 'hamburger'}.svg`}
           width={24}
           height={21}
@@ -112,33 +112,35 @@ function Nav() {
       </div>
 
       {/* Mobile Links */}
-      {open && (
-        <div className="absolute w-2/3 bg-white/5 backdrop-blur-3xl top-0 right-0 bottom-0 z-40 px-8 pt-28 space-y-10">
-          <Link href="/">
-            <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
-              <span className="font-bold mr-3">00</span>Home
-            </p>
-          </Link>
+      <div
+        className={`md:hidden absolute w-2/3 bg-white/5 backdrop-blur-3xl top-0 right-0 bottom-0 z-40 px-8 pt-28 space-y-10 transition duration-300 transform ease-in-out ${
+          open ? 'translate-x-0' : 'translate-x-[1000px] '
+        } `}
+      >
+        <Link href="/">
+          <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
+            <span className="font-bold mr-3">00</span>Home
+          </p>
+        </Link>
 
-          <Link href="/destination">
-            <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
-              <span className="font-bold mr-3">01</span>Destination
-            </p>
-          </Link>
+        <Link href="/destination">
+          <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
+            <span className="font-bold mr-3">01</span>Destination
+          </p>
+        </Link>
 
-          <Link href="/crew">
-            <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
-              <span className="font-bold mr-3">02</span>Crew
-            </p>
-          </Link>
+        <Link href="/crew">
+          <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
+            <span className="font-bold mr-3">02</span>Crew
+          </p>
+        </Link>
 
-          <Link href="/technology">
-            <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
-              <span className="font-bold mr-3">03</span>Technology
-            </p>
-          </Link>
-        </div>
-      )}
+        <Link href="/technology">
+          <p className="cursor-pointer font-subtitle text-white uppercase tracking-[2.36px]">
+            <span className="font-bold mr-3">03</span>Technology
+          </p>
+        </Link>
+      </div>
     </div>
   )
 }
